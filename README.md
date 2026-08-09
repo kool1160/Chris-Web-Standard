@@ -18,7 +18,7 @@ Start with the visitor, business goal, content, conversion/action path, required
 4. Start Codex with `templates/CODEX_CHAT.md`.
 5. Review-Control says **`CONTINUE`**.
 6. Codex performs one bounded implementation/repair pass and stops **`AWAITING_REVIEW`**.
-7. Review-Control checks the exact head for visitor flow, brand, responsive behavior, accessibility, performance, SEO/form/privacy requirements, and production safety. Repair needed? Record the finding and say **`CONTINUE`**. Pass? Perform routine advancement inside the already-approved plan and say **`CONTINUE`** for the next gate.
+7. Review-Control audits the exact head with `AUDIT_PROCESS.md` for visitor flow, brand, responsive behavior, accessibility, performance, SEO/form/privacy requirements, and production safety. Repair needed? Record the finding and say **`CONTINUE`**. Pass? Perform routine advancement inside the already-approved plan and say **`CONTINUE`** for the next gate.
 8. Pull the owner back in only for real business/brand/privacy/production decisions or controlled actions.
 
 ## Operating loop
@@ -34,10 +34,14 @@ Codex implements or repairs one bounded pass
           ↓
     AWAITING_REVIEW
           ↓
-Review-Control Chat checks exact head + evidence
+Review-Control exact-head audit
      ↙                 ↘
 CONTINUE            OWNER_DECISION / BLOCKED
 ```
+
+## Audit rule
+
+Audit is **scope + deterministic checks + browser truth + Review-Control exact-head judgment**. Claude / Anthropic is not part of the standard audit, review, fallback, or tie-break path. See `AUDIT_PROCESS.md`.
 
 ## Core guardrails
 
@@ -58,7 +62,8 @@ CONTINUE            OWNER_DECISION / BLOCKED
 3. `PROJECT_SCOPE.md`
 4. `CURRENT.md`
 5. `OPERATOR_PROTOCOL.md`
-6. `QUALITY_GATES.md`
+6. `AUDIT_PROCESS.md`
+7. `QUALITY_GATES.md`
 
 ## Standard files
 
@@ -66,6 +71,7 @@ CONTINUE            OWNER_DECISION / BLOCKED
 - `PROJECT_SCOPE.md`
 - `CURRENT.md`
 - `OPERATOR_PROTOCOL.md`
+- `AUDIT_PROCESS.md`
 - `AGENTS.md`
 - `QUALITY_GATES.md`
 - `BACKLOG.md`
