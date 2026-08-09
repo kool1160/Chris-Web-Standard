@@ -10,6 +10,17 @@ If the product is primarily an interactive application with persistent user work
 
 Start with the visitor, business goal, content, conversion/action path, required integrations, V1 pages, non-goals, and proof of success. Do not start by choosing a heavy framework or building a backend the site may never need.
 
+## Run it in 60 seconds
+
+1. Complete `templates/PROJECT_INTAKE.md` with the owner.
+2. Lock visitor/business goals into `PROJECT_SCOPE.md` and one active gate in `CURRENT.md`.
+3. Start the planning/review chat with `templates/REVIEW_CONTROL_CHAT.md`.
+4. Start Codex with `templates/CODEX_CHAT.md`.
+5. Review-Control says **`CONTINUE`**.
+6. Codex performs one bounded implementation/repair pass and stops **`AWAITING_REVIEW`**.
+7. Review-Control checks the exact head for visitor flow, brand, responsive behavior, accessibility, performance, SEO/form/privacy requirements, and production safety. Repair needed? Record the finding and say **`CONTINUE`**. Pass? Perform routine advancement inside the already-approved plan and say **`CONTINUE`** for the next gate.
+8. Pull the owner back in only for real business/brand/privacy/production decisions or controlled actions.
+
 ## Operating loop
 
 ```text
@@ -60,6 +71,8 @@ CONTINUE            OWNER_DECISION / BLOCKED
 - `BACKLOG.md`
 - `templates/PROJECT_INTAKE.md`
 - `templates/GATE.md`
+- `templates/REVIEW_CONTROL_CHAT.md`
+- `templates/CODEX_CHAT.md`
 - `.github/pull_request_template.md`
 - `sxf/project.sxf.example.yaml`
 
