@@ -6,12 +6,13 @@
 2. `PROJECT_SCOPE.md`
 3. `CURRENT.md`
 4. `OPERATOR_PROTOCOL.md`
-5. `AGENTS.md`
-6. active gate / issue
-7. active PR, exact head, review threads, CI
-8. `QUALITY_GATES.md`
-9. `BACKLOG.md`
-10. historical notes
+5. `AUDIT_PROCESS.md`
+6. `AGENTS.md`
+7. active gate / issue
+8. active PR, exact head, review threads, CI
+9. `QUALITY_GATES.md`
+10. `BACKLOG.md`
+11. historical notes
 
 Conflict means `BLOCKED`.
 
@@ -29,6 +30,7 @@ Conflict means `BLOCKED`.
 - Production domain/DNS, tracking/privacy, paid service, billing, destructive content/data change, or externally visible release action follows its explicit authority boundary.
 - New ideas and unrelated cleanup go to `BACKLOG.md`.
 - Builder confidence is not independent review.
+- **Claude / Anthropic is not used for standard audit, review, fallback, or tie-breaking.** Follow `AUDIT_PROCESS.md`.
 
 ## Codex stop condition
 
